@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sleep Logger</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>
+    Enter time went to bed
+  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label></ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm:ss" [(ngModel)]="startTime"></ion-datetime>
+      <!--ion-datetime displayFormat="MM/DD/YYYY HH:mm:ss" *ngFor="let item of testItems | async"></ion-datetime-->
+      <!--  {{ item.name }}-->
+    </ion-item>
+  </ion-list>
+  
+  <p>
+    Enter time woke up
+  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label></ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm:ss" [(ngModel)]="endTime"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  
+  <ion-item>
+    <ion-button size="large" fill="outline" (click)="btnClicked()">Log Sleep</ion-button>
+  </ion-item>
+   
+
+</ion-content>
