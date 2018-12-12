@@ -22,7 +22,8 @@ export class StanfordSleepinessData extends SleepData {
 	}
 
 	summaryString():string {
-		return this.loggedValue + ": " + StanfordSleepinessData.ScaleValues[this.loggedValue];
+	  if(this.loggedValue >= 1 && this.loggedValue <= 7)
+		  return this.loggedValue + ": " + StanfordSleepinessData.ScaleValues[this.loggedValue];
 	}
 	
 	summaryDate():string {
