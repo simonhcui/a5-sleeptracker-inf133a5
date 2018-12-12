@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sleepiness</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>
+    Enter Sleepiness from 1 to 7 (1 being most awake and 7 being most sleepy)
+  </p>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Enter Sleepiness</ion-label>
+      <ion-input type="number" [(ngModel)]="score" min="1" max="7" placeholder="Sleepiness"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <ion-item>
+    <ion-button size="large" fill="outline" (click)="btnClicked()">Record Sleepiness</ion-button>
+  </ion-item>
+  
+  
+
+</ion-content>
