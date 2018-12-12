@@ -17,10 +17,19 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { DeviceMotion } from '@ionic-native/device-motion/ngx';
 
+export const firebaseConfig = {
+  apiKey: "344f5ab65826e8fd39c62f41a180d176eff7cfbe",
+  authDomain: "test133-3fcc2.firebaseapp.com",
+  databaseURL: "https://test133-3fcc2.firebaseio.com",
+  projectId: "test133-3fcc2",
+  storageBucket: "test133-3fcc2.appspot.com",
+  messagingSenderId: "909242581340"
+}
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFirestoreModule, AngularFireAuthModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFirestoreModule, AngularFireModule.initializeApp(firebaseConfig), AngularFireAuthModule],
   providers: [
     StatusBar,
     SplashScreen,
