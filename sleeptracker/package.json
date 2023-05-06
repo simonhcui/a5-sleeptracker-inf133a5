@@ -32,7 +32,7 @@
     "core-js": "^2.5.3",
     "de.appplant.cordova.plugin.local-notification": "^0.8.5",
     "firebase": "^5.7.0",
-    "firebase-admin": "^6.3.0",
+    "firebase-admin": "^11.8.0",
     "i": "^0.3.6",
     "npm": "^6.4.1",
     "rxjs": "^6.3.3",
